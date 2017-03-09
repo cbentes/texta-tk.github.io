@@ -19,7 +19,7 @@ TEXTA can be downloaded from Git repository. If you are missing *git*, you can d
 
 .. code-block:: bash
 
-    git clone https://github.com/ekt68/texta.git
+    git clone https://github.com/texta-tk/texta.git
 
 
 This generates a directory called *texta*, which contains the code base.
@@ -114,7 +114,8 @@ The following code block lists all the Python libraries that TEXTA depends on al
     pip install gensim
     pip install django
     pip install pathlib
-    
+    pip install sympy
+
 .. note::
 
     If using `Anaconda <https://www.continuum.io/downloads>`_, all can be substituted with *conda install library_name*.
@@ -142,7 +143,7 @@ All that is left is to synchronize database state by running
 
 .. code-block:: bash
 
-    python manage.py makemigrations lm conceptualiser mwe_miner account home corpus_tool model_manager ontology_viewer base permission_admin grammar_builder document_miner
+    python manage.py makemigrations lm conceptualiser mwe_miner account home corpus_tool model_manager ontology_viewer base permission_admin grammar_builder
     python manage.py migrate
     
 and create a superuser for TEXTA to assign application permissions
